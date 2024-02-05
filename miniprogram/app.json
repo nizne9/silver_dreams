@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/teacher/teacher",
     "pages/index/index",
     "pages/getOpenId/index",
     "pages/getMiniProgramCode/index",
@@ -23,6 +24,7 @@
     "navigationBarTitleText": "云开发 QuickStart",
     "navigationBarTextStyle": "black"
   },
+  
   "sitemapLocation": "sitemap.json",
   "style": "v2",
   "lazyCodeLoading": "requiredComponents"
