@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "fBar": "/components/tab_bar/tab_bar"
+  }
+}

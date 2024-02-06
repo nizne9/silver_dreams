@@ -16,15 +16,15 @@ Component({
         },
         {
           "current": 0,
-          "pagePath": "../../pages/post/index",
+          "pagePath": "/pages/teacher_order/teacher_order",
           "text": "订单",
-          "iconClass":"cu-btn icon-add bg-green shadow",
-          "iconTopClass":"add-action"
+          "iconClass":"icon-add",
+          "iconTopClass":""
 
         },
         {
           "current": 0,
-          "pagePath": "../../pages/my/my",
+          "pagePath": "/pages/teacher_home/teacher_home",
           "text": "主页",
           "iconClass":"icon-my",
           "iconTopClass":""
