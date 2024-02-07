@@ -1,0 +1,16 @@
+{
+  "pages": [
+    "pages/teacher/teacher",
+    "pages/teacher_home/teacher_home",
+    "pages/teacher_order/teacher_order"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2",
+  "lazyCodeLoading": "requiredComponents"
+}
