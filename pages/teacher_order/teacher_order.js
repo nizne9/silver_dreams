@@ -1,49 +1,13 @@
-// pages/teacher_order/teacher_order.js
+const app = getApp()
+
 Page({
-
-  /**
-   * 页面的初始数据
-   */
-  data: {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad(options) {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload() {
-
-  },
-
-  /**
+    data: {
+      title:"分包 - 首页",
+      showTip: !1
+    },
+    onShow: function() {
+    },
+      /**
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh() {
@@ -56,11 +20,15 @@ Page({
   onReachBottom() {
 
   },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage() {
-
-  }
-})
+    onLoad: function(e) {
+      var t = this
+      app.getMainAreaHeight(t).then(res => {
+        t.setData({
+          mainHeight: 'height:-webkit-calc(100vh - ' + res +'px);height: calc(100vh - ' + res +'px);'
+        })
+      })
+      e.showTip && this.setData({
+        showTip: e.showTip == 1 ? !0 : !1
+      })
+    }
+});

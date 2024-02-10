@@ -2,6 +2,7 @@
   "pages": [
     "pages/teacher/teacher",
     "pages/teacher_home/teacher_home",
+    "pages/index/index",
     "pages/teacher_order/teacher_order"
   ],
   "window": {

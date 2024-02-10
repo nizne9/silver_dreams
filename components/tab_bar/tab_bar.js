@@ -42,7 +42,7 @@ Component({
     methods: {
       goToTab: function(e){
         var url = e.currentTarget.dataset.url
-        wx.navigateTo({
+        wx.redirectTo({
           url:url
         })
       }

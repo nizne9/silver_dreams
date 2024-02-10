@@ -1,3 +1,7 @@
-<!--pages/teacher_home/teacher_home.wxml-->
-<text>pages/teacher_home/teacher_home.wxml</text>
+<view class="container" style="{{mainHeight}}">
+  <button class="avatar-wrapper" open-type="chooseAvatar" bind:chooseavatar="onChooseAvatar">
+  <image class="avatar" src="{{avatarUrl}}"></image>
+</button> 
+<input type="nickname" class="weui-input" placeholder="请输入姓名"/>
+</view>
 <fBar id="f-bar" idx="0"></fBar>
