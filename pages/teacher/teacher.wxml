@@ -1,21 +1,17 @@
-<!-- <cBar id="c-bar" title="{{title}}" showBack="true" showHome="true"></cBar> -->
-
-<block >
-<view class="order_item">
-  
-
-  <view>玉田县第一中学</view>
-  <view>数学</view>
-  <view>30人</view>
-  <view>$2000</view>
+<view class="container">
+  <view>当前还可选择{{total}}个订单</view>
+  <view wx:for="{{item_list}}" wx:for-item="order" class="order_item">
+    <view class="item_top">
+      <view>{{order.subject}}</view>
+      <view>{{order.hours}}课时</view> 
+      <view>{{order.salary}}元/课时</view> 
+    </view>
+    <view class="item_mid">
+      <view>{{order.begin}}~{{order.end}}</view>
+      <view>{{order.student}}人</view>
+      <button size="mini" plain="true" class="but" bind:tap='gotoPage'><text class="text">查看详情</text></button>
+    </view>
+    <view>{{order.school}}</view>
+  </view>
 </view>
-</block>
-<block >
-<view class="order_item">
-  <view>玉田县第一中学</view>
-  <view>数学</view>
-  <view>30人</view>
-  <view>$2000</view>
-</view>
-</block>
 <fBar id="f-bar" idx="0"></fBar>

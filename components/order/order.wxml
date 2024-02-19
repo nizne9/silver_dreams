@@ -1,0 +1,15 @@
+<view class="order_item">
+  <view class="item_top">
+    <view>{{subject}}</view>
+    <view>{{hours}}课时</view> 
+    <view>{{salary}}元/课时</view> 
+  </view>
+  <view class="item_mid">
+    <view>{{begin}}~{{end}}</view>
+    <view>{{student}}人</view>
+    <button size="mini" plain="true" class="but">查看详情</button>
+  </view>
+  <view>
+    <view>{{school}}</view>
+  </view>
+</view>

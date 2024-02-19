@@ -1,7 +1,4 @@
 <view class="container" style="{{mainHeight}}">
-  <button class="avatar-wrapper" open-type="chooseAvatar" bind:chooseavatar="onChooseAvatar">
-  <image class="avatar" src="{{avatarUrl}}"></image>
-</button> 
-<input type="nickname" class="weui-input" placeholder="请输入姓名"/>
+<image src='../../img/a.jpg' class='avatar'></image>
 </view>
-<fBar id="f-bar" idx="0"></fBar>
+<fBar id="f-bar" idx="2"></fBar>

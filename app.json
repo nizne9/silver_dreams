@@ -3,7 +3,8 @@
     "pages/teacher/teacher",
     "pages/teacher_home/teacher_home",
     "pages/index/index",
-    "pages/teacher_order/teacher_order"
+    "pages/teacher_order/teacher_order",
+    "pages/order_detil/order_detil"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
