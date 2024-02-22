@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/login/login",
     "pages/teacher/teacher",
     "pages/teacher_home/teacher_home",
     "pages/index/index",
