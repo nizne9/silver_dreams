@@ -1,0 +1,10 @@
+<!--pages/register_select/register_select.wxml-->
+<view class="container">
+  <view class="title">请选择您的身份\n一个人只能选择一种身份</view>
+  <view class="identity-list">
+    <button class="identity-item" bindtap="selectIdentity" data-identity="teacher">银龄教师</button>
+    <button class="identity-item" bindtap="selectIdentity" data-identity="school_admin">学校负责人</button>
+    <button class="identity-item" bindtap="selectIdentity" data-identity="student">学生</button>
+    <button class="identity-item" bindtap="selectIdentity" data-identity="staff">审查员</button>
+  </view>
+</view>

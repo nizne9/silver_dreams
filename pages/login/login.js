@@ -8,28 +8,31 @@ Page({
     password: ''
   },
 
-  onInputId: function(e) {
+  onInputId: function (e) {
     this.setData({
-      id: e.detail.value 
+      id: e.detail.value
     });
   },
 
-  onInputPassword: function(e) {
+  onInputPassword: function (e) {
     this.setData({
-      password: e.detail.value 
+      password: e.detail.value
     });
   },
 
   // 处理注册
   handleRegister() {
     wx.navigateTo({
-      url: '/pages/register/register'
+      url: '/pages/register_select/register_select'
     });
   },
 
   // 处理登录
   handleLogin() {
-    const { id, password } = this.data;
+    const {
+      id,
+      password
+    } = this.data;
     // TODO: 添加身份证号和密码的验证逻辑
     if (!id || !password) {
       wx.showToast({
@@ -42,15 +45,14 @@ Page({
     // TODO: 添加发送登录请求的代码
     wx.showToast({
       title: '登录成功',
-      icon: 'success'
+      icon: 'success',
+      success: wx.navigateTo({
+        url: '/pages/teacher/teacher'
+      })
     });
-    // TODO: 登录成功后的处理，比如页面跳转
     console.log("登录信息：", id, password);
-    wx.navigateTo({
-      url: '/pages/teacher/teacher'
-    });
   },
-  
+
   /**
    * 生命周期函数--监听页面加载
    */

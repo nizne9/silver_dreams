@@ -1,0 +1,30 @@
+<!--pages/register_info/register_info.wxml-->
+<view class="container">
+  <view class="register-form">
+    <view class="input-group">
+      <text class="input-label">手机号</text>
+      <input data-field="phone_num" class="input-field" type="number" placeholder="请输入您的手机号" bindinput="onInput" />
+    </view>
+    <view class="input-group">
+      <text class="input-label">验证码</text>
+      <input data-field="code" class="input-field" type="number" placeholder="请输入收到的验证码" bindinput="onInput" />
+    </view>
+    <view class="input-group">
+      <text class="input-label">身份证号</text>
+      <input data-field="id" class="input-field" type="text" placeholder="请输入您的身份证号" bindinput="onInput" />
+    </view>
+    <view class="input-group">
+      <text class="input-label">密码</text>
+      <input data-field="password" class="input-field" type="password" placeholder="请输入您的密码" bindinput="onInput" />
+    </view>
+    <view class="input-group">
+      <text class="input-label">确认密码</text>
+      <input data-field="confirm_psw" class="input-field" type="password" placeholder="请再次确认密码" bindinput="onInput" />
+    </view>
+    <view class="input-group" wx:if="{{identity === 'student' || identity === 'school_admin'}}">
+      <text class="input-label">邀请码</text>
+      <input data-field="invitation_code" class="input-field" type="number" placeholder="请输入您学校的邀请码" bindinput="onInput" />
+    </view>
+    <button class="register-btn" bind:tap="submitForm">注册</button>
+  </view>
+</view>

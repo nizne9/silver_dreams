@@ -5,7 +5,9 @@
     "pages/teacher_home/teacher_home",
     "pages/index/index",
     "pages/teacher_order/teacher_order",
-    "pages/order_detil/order_detil"
+    "pages/order_detil/order_detil",
+    "pages/register_info/register_info",
+    "pages/register_select/register_select"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",

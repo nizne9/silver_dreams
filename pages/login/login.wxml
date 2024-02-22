@@ -12,7 +12,7 @@
     </view>
     <view class="button-group">
       <button class="login-button" bindtap="handleLogin">登录</button>
-      <button class="register-button" bindtap="handleRegister">注册</button>
+      <button class="register-button" bind:tap="handleRegister">注册</button>
     </view>
     <view class="ad-space">广告位招租</view>
   </view>

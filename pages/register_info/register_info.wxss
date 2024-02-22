@@ -1,4 +1,4 @@
-/* pages/login/login.wxss */
+/* pages/register_info/register_info.wxss */
 .container {
   display: flex;
   justify-content: flex-start;
@@ -7,24 +7,7 @@
   padding: 20px;
 }
 
-.form-title {
-  font-size: 24px;
-  color: #333;
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.ad-space {
-  font-size: 30px;
-  text-align: center;
-  margin-top: 100px;
-  border: 1px solid;
-  padding: 10px;
-  border-radius: 4px;
-}
-
-
-.login-form {
+.register-form {
   width: 100%;
   max-width: 400px;
 }
@@ -57,15 +40,7 @@
   border-radius: 4px;
 }
 
-.button-group {
-  margin-top: 50px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.login-button,
-.register-button {
-  flex: 0.4;
+.register-btn {
   background-color: #1aad19;
   color: white;
   padding: 10px;
