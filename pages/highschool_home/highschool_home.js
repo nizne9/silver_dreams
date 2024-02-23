@@ -26,6 +26,7 @@ Page({
       
     },
     onShow: function() {
+      wx.hideHomeButton();
     },
 
     onLoad: function(e) {
@@ -39,6 +40,5 @@ Page({
     gotoPage: function(){ 
       console.log('bindtap触发了')
       wx.navigateTo({ url: '/pages/order_detil/order_detil'}) 
-    },
-    
+    }
 });

@@ -2,6 +2,8 @@ const app = getApp()
 
 Page({
     data: {
+      array: ['全部订单', '进行中订单', '已完成订单'],
+      index: 0,
       total: 2,
       item_list:[
         {
@@ -40,5 +42,13 @@ Page({
       console.log('bindtap触发了')
       wx.navigateTo({ url: '/pages/order_detil/order_detil'}) 
     },
-    
+    addorder:function(){
+      wx.navigateTo({ url: '/pages/add_order/add_order'}) 
+    },
+    bindPickerChange: function (e) {
+      console.log('picker发送选择改变，携带值为', e.detail.value)
+      this.setData({
+        index: e.detail.value
+      })
+    },
 });

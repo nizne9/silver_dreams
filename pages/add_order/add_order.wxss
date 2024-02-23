@@ -1,0 +1,9 @@
+/* pages/add_order/add_order.wxss */
+.picker{
+  padding: 13px;
+  background-color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}

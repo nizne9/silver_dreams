@@ -1,0 +1,23 @@
+<!--pages/add_order/add_order.wxml-->
+<picker bindchange="bindPickerChange" value="{{class_index}}" range="{{class_list}}">
+    <view class="picker">选择班级：{{class_list[class_index]}}</view>
+  </picker>
+<picker bindchange="bindPickerChange" value="{{subject_index}}" range="{{subject_list}}">
+    <view class="picker">选择科目：{{subject_list[subject_index]}}</view>
+  </picker>
+  <picker mode="date" value="{{begin_date}}" start="2023-09-01" end="2077-09-01" bindchange="bindbeginDateChange">
+      <view class="picker">
+        选择开始日期: {{begin_date}}
+      </view>
+    </picker>
+    <picker mode="date" value="{{end_date}}" start="2023-09-01" end="2077-09-01" bindchange="bindendDateChange">
+      <view class="picker">
+        选择结束日期: {{end_date}}
+      </view>
+    </picker>
+<view>
+  选择课时数
+</view>
+<view>
+  选择薪酬
+</view>
