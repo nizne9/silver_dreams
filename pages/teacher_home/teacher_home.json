@@ -3,6 +3,6 @@
   "enablePullDownRefresh": false,
   "backgroundTextStyle": "dark",
   "usingComponents": {
-    "fBar": "/components/tab_bar/tab_bar"
+    "fBar": "/components/tab_bar_teacher/tab_bar"
   }
 }

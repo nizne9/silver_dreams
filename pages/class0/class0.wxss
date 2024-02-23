@@ -1,0 +1,7 @@
+/* pages/class0/class0.wxss */
+.mumber{
+  display: flex;
+  justify-content: space-between;
+  margin: 10rpx;
+  background-color: #fff;
+}

@@ -1,10 +1,15 @@
 {
   "pages": [
+    "pages/highschool/highschool",
     "pages/teacher/teacher",
     "pages/teacher_home/teacher_home",
     "pages/index/index",
     "pages/teacher_order/teacher_order",
-    "pages/order_detil/order_detil"
+    "pages/order_detil/order_detil",
+    "pages/highschool_home/highschool_home",
+    "pages/highschool_student/highschool_student",
+    "pages/add_order/add_order",
+    "pages/class0/class0"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
