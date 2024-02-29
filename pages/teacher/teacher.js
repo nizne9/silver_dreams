@@ -1,5 +1,31 @@
 const app = getApp()
 
+const mysql = require('mysql');
+
+const connection = mysql.createConnection({
+  host: '122.9.7.192',
+  user: 'root',
+  password: '123qweQWE.',
+  database: 'dream_powered_by_retiredteacher'
+});
+
+connection.connect((err) => {
+  if (err) {
+    console.log(err);
+    throw err;
+  }
+  console.log('Connected to MySQL server');
+});
+
+connection.query('SELECT * FROM class', (error, results, fields) => {
+  if (error) {
+    throw error;
+  }
+  console.log(results);
+});
+
+
+
 Page({
     data: {
       total: 2,
@@ -29,6 +55,7 @@ Page({
     },
 
     onLoad: function(e) {
+      
       var t = this
       app.getMainAreaHeight(t).then(res => {
         t.setData({
