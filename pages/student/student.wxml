@@ -1,0 +1,36 @@
+<!--pages/student/student.wxml-->
+<view class="container">
+  <view class="section-title">进行中的授课</view>
+  <view wx:for="{{ongoing_courses}}" wx:key="unique" class="course-item">
+    <view class="item-top">
+      <view class="avatar-wrapper">
+        <image src="{{item.avatar_url}}" class="teacher-avatar" />
+      </view>
+      <view class="info-wrapper">
+        <view class="info-text">{{item.begin}}~{{item.end}}</view>
+        <view class="info-text">{{item.subject}}</view>
+      </view>
+    </view>
+    <view class="item-bottom">
+      <view class="teacher-name">{{item.teacher}}</view>
+      <button class="details-button">查看进度</button>
+    </view>
+  </view>
+
+  <view class="section-title">已结束的授课</view>
+  <view wx:for="{{completed_courses}}" wx:key="unique" class="course-item">
+    <view class="item-top">
+      <view class="avatar-wrapper">
+        <image src="{{item.avatar_url}}" class="teacher-avatar" />
+      </view>
+      <view class="info-wrapper">
+        <view class="info-text">{{item.begin}}~{{item.end}}</view>
+        <view class="info-text">{{item.subject}}</view>
+      </view>
+    </view>
+    <view class="item-bottom">
+      <view class="teacher-name">{{item.teacher}}</view>
+      <button class="details-button">进行评价</button>
+    </view>
+  </view>
+</view>

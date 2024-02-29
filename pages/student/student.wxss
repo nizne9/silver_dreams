@@ -1,0 +1,91 @@
+/* pages/student/student.wxss */
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 20px;
+}
+
+.section-title,
+.course-item {
+  width: calc(100% - 20px);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.section-title {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 25px;
+  padding: 20px;
+  display: flex;
+  background-color: #007AFF;
+  color: #ffffff
+}
+
+.section-title:not(:first-of-type) {
+  margin-top: 25px;
+  background-color: #ff4d4f;
+}
+
+.course-item {
+  /* display: flex; */
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.avatar-wrapper {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.teacher-avatar {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.info-wrapper {
+  padding-left: 25%;
+  flex-grow: 1;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.details-button {
+  border: 1px solid #ccc;
+  background-color: #2196F3;
+  color: white;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.details-button:hover {
+  background-color: #1976D2; /* 鼠标悬停时颜色稍微深一些 */
+}
+
+.item-top {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.item-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.teacher-name {
+  padding-left: 3px;
+  font-weight: bold;
+}
