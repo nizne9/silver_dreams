@@ -1,4 +1,6 @@
 <view class="container" style="{{mainHeight}}">
 <image src='../../img/a.jpg' class='avatar'></image>
 </view>
+
+<view class="cv">你好</view>
 <fBar id="f-bar" idx="2"></fBar>

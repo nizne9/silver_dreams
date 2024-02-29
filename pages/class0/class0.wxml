@@ -1,0 +1,7 @@
+<!--pages/class0/class0.wxml-->
+<text>班级成员 修改</text>
+<view class="mumber">
+<view>2021213241</view>
+<view>xxx</view>
+<view>15512345678</view>
+</view>
