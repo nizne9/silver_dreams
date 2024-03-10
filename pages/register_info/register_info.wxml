@@ -2,8 +2,8 @@
 <view class="container">
   <view class="register-form">
     <view class="input-group">
-      <text class="input-label">手机号</text>
-      <input data-field="phone_num" class="input-field" type="number" placeholder="请输入您的手机号" bindinput="onInput" />
+      <text class="input-label">手机号码</text>
+      <input data-field="phone_num" class="input-field" type="number" placeholder="请输入您的手机号码" bindinput="onInput" />
     </view>
     <view class="input-group">
       <text class="input-label">验证码</text>
@@ -25,6 +25,18 @@
       <text class="input-label">邀请码</text>
       <input data-field="invitation_code" class="input-field" type="number" placeholder="请输入您学校的邀请码" bindinput="onInput" />
     </view>
-    <button class="register-btn" bind:tap="submitForm">注册</button>
+    <view class="input-group" wx:if="{{identity === 'school_admin'}}">
+      <text class="input-label">学校名称</text>
+      <input data-field="school_name" class="input-field" type="text" placeholder="请输入您负责的学校名称" bindinput="onInput" />
+    </view>
+    <view class="input-group" wx:if="{{identity === 'teacher'}}">
+      <text class="input-label">职称</text>
+      <input data-field="teacher_title" class="input-field" type="text" placeholder="请输入您的职称" bindinput="onInput" />
+    </view>
+    <view class="input-group" wx:if="{{identity === 'teacher'}}">
+      <text class="input-label">教师证号码</text>
+      <input data-field="teacher_certificate" class="input-field" type="text" placeholder="请输入您的教师证号码" bindinput="onInput" />
+    </view>
+    <view class="register-btn" bind:tap="submitForm">注册</view>
   </view>
 </view>

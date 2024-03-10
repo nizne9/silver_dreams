@@ -10,7 +10,10 @@ Page({
     id: '',
     password: '',
     confirm_psw: '',
-    invitation_code: ''
+    invitation_code: '',
+    school_name: '',
+    teacher_title: '',
+    teacher_certificate: '',
   },
 
   onInput: function (e) {
