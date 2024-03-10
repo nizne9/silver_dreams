@@ -1,19 +1,22 @@
 <!--pages/login/login.wxml-->
 <view class="container">
+  <view class="head">
+        <image class="logo" src="../../img/logo.jpg" />
+      <text class="slogan">银龄智慧，与你共铸教育未来</text>
+    </view>
   <view class="login-form">
-    <view class="form-title">银龄筑梦</view>
     <view class="input-group">
-      <text class="input-label">身份证号</text>
-      <input name="id" class="input-field" type="text" placeholder="请输入您的身份证号" bindinput="onInputId" />
+      <!-- <text class="input-label">身份证号</text> -->
+      <input maxlength="18" name="id" class="input-field" type="text" placeholder="身份证号" bindinput="onInputId" />
     </view>
     <view class="input-group">
-      <text class="input-label">密码</text>
-      <input name="password" class="input-field" type="password" placeholder="请输入密码" bindinput="onInputPassword" />
+      <!-- <text class="input-label">密码</text> -->
+      <input name="password" class="input-field" type="password" placeholder="密码" bindinput="onInputPassword" />
     </view>
     <view class="button-group">
       <button class="login-button" bindtap="handleLogin">登录</button>
       <button class="register-button" bind:tap="handleRegister">注册</button>
     </view>
-    <view class="ad-space">广告位招租</view>
+    <!-- <view class="ad-space">广告位招租</view> -->
   </view>
 </view>
