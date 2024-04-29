@@ -1,23 +1,27 @@
 {
   "pages": [
     "pages/login/login",
+    "pages/student/student",
     "pages/highschool/highschool",
+    
     "pages/teacher/teacher",
+    "pages/highschool_home/highschool_home",
     "pages/teacher_home/teacher_home",
     "pages/index/index",
     "pages/teacher_order/teacher_order",
     "pages/order_detil/order_detil",
-    "pages/highschool_home/highschool_home",
+    
     "pages/highschool_student/highschool_student",
     "pages/add_order/add_order",
     "pages/class0/class0",
     "pages/register_info/register_info",
-    "pages/register_select/register_select",
-    "pages/student/student"
+    "pages/register_select/register_select"
+    
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
     "backgroundTextStyle": "light",
+    "navigationBarTitleText": "银龄筑梦",
     "navigationBarBackgroundColor": "#F6F6F6",
     "navigationBarTextStyle": "black"
   },

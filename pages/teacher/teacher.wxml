@@ -1,4 +1,8 @@
+<view class="admet">
+  <image src='../../img/b.jpg' class="ad" mode="widthFix"></image>
+</view>
 <view class="container">
+  
   <view>当前还可选择{{total}}个订单</view>
   <view wx:for="{{item_list}}" wx:for-item="order" class="order_item">
     <view class="item_top">

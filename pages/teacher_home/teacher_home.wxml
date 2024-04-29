@@ -1,6 +1,11 @@
 <view class="container" style="{{mainHeight}}">
 <image src='../../img/a.jpg' class='avatar'></image>
 </view>
-
+<view>
+姓名（昵称）
+个人介绍
+总评分
+细节评分
+</view>
 <view class="cv">你好</view>
 <fBar id="f-bar" idx="2"></fBar>

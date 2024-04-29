@@ -1,4 +1,6 @@
 <view class="container">
   <view>洋县中学</view>
+  <image src='../../img/b.jpg'></image>
 </view>
+
 <fBar id="f-bar" idx="2"></fBar>

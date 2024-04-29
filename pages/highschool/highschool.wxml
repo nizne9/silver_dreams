@@ -1,9 +1,7 @@
 <view class="container">
-<swiper display-multiple-items="true">
-  <swiper-item>
-    <view>广告位</view>
-  </swiper-item>
-</swiper>
+  <image src='../../img/b.jpg' class='avatar'></image>
+
+
   <button type="primary" bind:tap="addorder">发布新订单</button>
   <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
     <view class="picker">订单筛选：{{array[index]}}</view>

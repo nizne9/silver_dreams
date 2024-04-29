@@ -46,7 +46,7 @@ Page({
     wx.showToast({
       title: '登录成功',
       icon: 'success',
-      success: wx.navigateTo({
+      success: wx.redirectTo({
         url: '/pages/teacher/teacher'
       })
     });

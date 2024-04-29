@@ -5,13 +5,40 @@ Page({
       total: 2,
       item_list:[
         {
-          school:"洋县中学",
+          school:"绍兴市柯桥区柯桥中学",
           subject:"数学",
-          salary:0,
-          hours:0,
-          begin:"1月1日",
+          salary:500,
+          hours:64,
+          begin:"9月1日",
           end:"1月1日",
-          student:0,
+          student:40,
+        },
+        {
+          school:"云南省保山第一中学",
+          subject:"英语",
+          salary:550,
+          hours:64,
+          begin:"3月1日",
+          end:"7月1日",
+          student:35,
+        },
+        {
+          school:"杨村第一中学",
+          subject:"数学",
+          salary:400,
+          hours:70,
+          begin:"3月1日",
+          end:"7月1日",
+          student:44,
+        },
+        {
+          school:"莒县文心高级中学",
+          subject:"数学",
+          salary:500,
+          hours:64,
+          begin:"9月1日",
+          end:"12月31日",
+          student:40,
         },
         {
           school:"北邮",
@@ -22,10 +49,23 @@ Page({
           end:"6月1日",
           student:40,
         },
+        {
+          school:"北邮",
+          subject:"操作系统",
+          salary:500,
+          hours:64,
+          begin:"1月1日",
+          end:"6月1日",
+          student:40,
+        },
+        
       ],
       
     },
     onShow: function() {
+      
+        wx.hideHomeButton();
+      
     },
 
     onLoad: function(e) {

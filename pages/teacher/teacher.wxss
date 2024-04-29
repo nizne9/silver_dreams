@@ -47,3 +47,13 @@ page {
 .text{
   font-size: 15px;
 }
+.ad{
+  width: 98%;
+  height: 50%;
+  margin: 5rpx;
+  overflow: visible;
+  
+}
+.admet{
+  display: flex; flex-direction: column; justify-content: center; align-items: center;
+}

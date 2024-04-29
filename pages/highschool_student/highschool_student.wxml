@@ -1,7 +1,9 @@
 <view class="container">
 <view class="top">
   <view>班级列表</view>
+  <view>
   <button type="primary" size="mini">添加班级</button>
+  </view>
 </view>
 <view class="banji">
   <view class="banji_top">
@@ -9,17 +11,47 @@
     <view> </view>
   </view>
   <view class="banji_mid">
-    <view>0人</view>
+    <view>2人</view>
     <button bind:tap="manageclass" class="but" size="mini" plain="true">管理</button>
   </view>
 </view>
 <view class="banji">
   <view class="banji_top">
-    <view>2021219101班</view>
-    <view>五年级</view>
+    <view>113班</view>
+    <view>一年级</view>
   </view>
   <view class="banji_mid">
-    <view>25人</view>
+    <view>35人</view>
+    <button bind:tap="manageclass" class="but" size="mini" plain="true">管理</button>
+  </view>
+</view>
+<view class="banji">
+  <view class="banji_top">
+    <view>114班</view>
+    <view>一年级</view>
+  </view>
+  <view class="banji_mid">
+    <view>35人</view>
+    <button bind:tap="manageclass" class="but" size="mini" plain="true">管理</button>
+  </view>
+</view>
+<view class="banji">
+  <view class="banji_top">
+    <view>220班</view>
+    <view>二年级</view>
+  </view>
+  <view class="banji_mid">
+    <view>31人</view>
+    <button bind:tap="manageclass" class="but" size="mini" plain="true">管理</button>
+  </view>
+</view>
+<view class="banji">
+  <view class="banji_top">
+    <view>301班</view>
+    <view>三年级</view>
+  </view>
+  <view class="banji_mid">
+    <view>30人</view>
     <button bind:tap="manageclass" class="but" size="mini" plain="true">管理</button>
   </view>
 </view>
