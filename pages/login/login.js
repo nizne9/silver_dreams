@@ -4,6 +4,22 @@ Page({
    * 页面的初始数据
    */
   data: {
+    testAccounts: [{
+        id: 'student-test',
+        password: '114514',
+        type: 'student'
+      },
+      {
+        id: 'teacher-test',
+        password: '114514',
+        type: 'teacher'
+      },
+      {
+        id: 'highschool-test',
+        password: '114514',
+        type: 'highschool'
+      },
+    ],
     id: '',
     password: ''
   },
@@ -30,6 +46,7 @@ Page({
   // 处理登录
   handleLogin() {
     const {
+      testAccounts,
       id,
       password
     } = this.data;
@@ -43,13 +60,49 @@ Page({
     }
 
     // TODO: 添加发送登录请求的代码
-    wx.showToast({
-      title: '登录成功',
-      icon: 'success',
-      success: wx.redirectTo({
-        url: '/pages/teacher/teacher'
-      })
-    });
+    // TODO: 替换为实际登录逻辑
+    const accountInfo = testAccounts.find(account => account.id === id && account.password === password);
+    if (accountInfo) {
+      const type = accountInfo.type;
+      // 根据 type 跳转到相应的页面
+      if (type === 'teacher') {
+        wx.showToast({
+          title: '登录成功',
+          icon: 'success',
+          success: wx.redirectTo({
+            url: '/pages/teacher/teacher'
+          })
+        });
+      } else if (type === 'student') {
+        wx.showToast({
+          title: '登录成功',
+          icon: 'success',
+          success: wx.redirectTo({
+            url: '/pages/student/student'
+          })
+        });
+      } else if (type === 'highschool') {
+        wx.showToast({
+          title: '登录成功',
+          icon: 'success',
+          success: wx.redirectTo({
+            url: '/pages/highschool/highschool'
+          })
+        });
+      } else {
+        // 未知类型，提示错误信息
+        wx.showToast({
+          title: '登录失败，账号类型错误',
+          icon: 'none'
+        });
+      }
+    } else {
+      // 登录失败，提示错误信息
+      wx.showToast({
+        title: '登录失败，请检查账号和密码',
+        icon: 'none'
+      });
+    }
     console.log("登录信息：", id, password);
   },
 
