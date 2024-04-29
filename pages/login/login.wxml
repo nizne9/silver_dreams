@@ -1,7 +1,7 @@
 <!--pages/login/login.wxml-->
 <view class="container">
   <view class="head">
-        <image class="logo" src="../../img/logo.jpg" />
+        <image class="logo" src="../../img/logo2.png" />
       <text class="slogan">银龄智慧，与你共铸教育未来</text>
     </view>
   <view class="login-form">
